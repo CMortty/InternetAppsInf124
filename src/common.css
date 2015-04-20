@@ -1,7 +1,7 @@
 ul {
     text-align: center;
     clear: both;
-    list-style-type: none;    
+    list-style-type: none;
 }
 li {
     display: inline-block;
@@ -17,11 +17,16 @@ li a {
 
 li a:hover{
     background: #FF9598;
-    
+
 }
 
 #logo, #logo:visited, #logo:hover, #logo:active {
     display: inline-block;
     text-decoration: none;
     color: black;
+}
+
+.pageHeader {
+  text-align: center;
+  clear: both;
 }
