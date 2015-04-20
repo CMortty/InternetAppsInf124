@@ -1,7 +1,6 @@
 /*about.css*/
 
 .content p {
-    width: 50%;
     margin: 0px 0px 0px 0px;
 
     border: 1px;
@@ -13,7 +12,7 @@
   margin: 0px auto 0px auto;
   background: #93F9FF;
   border: 1px solid;
-  padding: 5px
+  padding: 5pxS
 
 
 }
@@ -22,4 +21,12 @@ h2{
 margin-bottom: 0em;
 margin-left: 0;
 margin-right: 0;
+
+}
+
+#office{
+  width: 23em;
+  height: auto;
+  float: left;
+
 }
