@@ -30,3 +30,12 @@ li a:hover{
   text-align: center;
   clear: both;
 }
+
+#shoppingCart {
+    background: white;
+    border: none;
+}
+
+#shoppingCart img{
+    width: 35px;
+}
