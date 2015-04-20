@@ -1,0 +1,9 @@
+/*about.css*/
+
+.content p {
+    width: 50%;
+    margin: 0px auto 0px auto;
+    background: #93F9FF;
+    border: 1px solid;
+    padding: 5px;
+}

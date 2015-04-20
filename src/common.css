@@ -1,0 +1,27 @@
+ul {
+    text-align: center;
+    clear: both;
+    list-style-type: none;    
+}
+li {
+    display: inline-block;
+    margin: 0px 5% 0px 5%;
+    padding: 10px 0px 10px 0px;
+    background: #E0FFE9;
+    border: 1px solid;
+}
+
+li a {
+    padding: 10px;
+}
+
+li a:hover{
+    background: #FF9598;
+    
+}
+
+#logo, #logo:visited, #logo:hover, #logo:active {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
