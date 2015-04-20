@@ -1,4 +1,9 @@
 #mainPhone {
     width: 20em;
     height: auto;
+    float: left;
+}
+.content .text {
+    float: left;
+    margin  : 0px 100px 0px 0px;   
 }
