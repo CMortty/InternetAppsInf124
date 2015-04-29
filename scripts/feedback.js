@@ -22,14 +22,14 @@ function validateInput(feedbackForm) {
 //    alert("textField: " + textField);
     var confirmationEmail = feedbackForm.confirmationEmail.checked;
 //    alert("confirmationEmail: " + confirmationEmail);
-    
+
     if (!validateName(fName)) {
         alert("Invalid first name.");
     }
     if (!validateName(lName)) {
         alert("Invalid last name.");
     }
-    
+
     if (!validateEmail(email)) {
         alert("Invalid email.");
     }
@@ -40,7 +40,7 @@ function validateInput(feedbackForm) {
         alert("Invalid text field.");
     }
 
-    
+
 }
 
 function validateName(name) {
