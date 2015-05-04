@@ -1,0 +1,37 @@
+/*aboutUs.css*/
+
+.content {
+    margin: 0px auto 0px 100px;
+}
+
+#cory {
+    width: 45%;
+    float: left;
+    
+    padding: 5px
+}
+
+#cory img {
+    float: right;
+    width: 80%;
+}
+
+#vishaal {
+    width: 45%;
+    float: left;
+    
+    padding: 5px
+}
+
+#vishaal h3 {
+    text-align: right;
+}
+
+#vishaal h2 {
+    text-align: right;
+}
+
+#vishaal img {
+    float: left;
+    width: 80%;
+}

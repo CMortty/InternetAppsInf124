@@ -1,3 +1,4 @@
+/*Menu Items*/
 ul {
     text-align: center;
     clear: both;
@@ -20,22 +21,36 @@ li a:hover{
 
 }
 
+#liAbout {
+    text-decoration: none;
+}
+
+/*Logo*/
 #logo, #logo:visited, #logo:hover, #logo:active {
     display: inline-block;
     text-decoration: none;
     color: black;
 }
 
+/*Header of each page*/
 .pageHeader {
   text-align: center;
   clear: both;
 }
 
-#shoppingCart {
+/*Drop down menu*/
+#about {
+    position: absolute;
+    margin: 10px 0px;
+    visibility: hidden;
+    border: 2px solid;
     background: white;
-    border: none;
 }
-
-#shoppingCart img{
-    width: 35px;
+#about a{
+    display: block;
+    postion: absolute;
+    width: 110px;
+    padding: 5px 10px;
+    text-align: left;
+    text-decoration: none;
 }
