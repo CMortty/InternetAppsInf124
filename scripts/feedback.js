@@ -82,3 +82,20 @@ function validateText(text) {
         return false;
     }
 }
+
+var id = 0;
+var colors = ["red", "purple", "yellow", "green", "blue", "orange"]
+function changeTextColor() {
+    var thankYou = document.getElementById("thanks");
+    thankYou.style.color = 5;
+    setInterval('change()', 2000);
+}
+
+function change(){
+    var thankYou = document.getElementById("thanks");
+    thankYou.style.color = colors[id];
+    id++;
+    if (id == 6) {
+        id = 0;
+    }
+}
