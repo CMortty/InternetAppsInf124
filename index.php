@@ -14,11 +14,10 @@
 </head>
 
 <body onload="startRotation()">
-    <div id="logo"></div>
-    <div id="mainMenu"></div>
     <?php
     include("common/banner.php");
     ?>
+    <div id="mainMenu"></div>
 
     <div class="content">
         <div class="text">

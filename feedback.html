@@ -18,7 +18,7 @@
 
     <div class="content">
         <h1 class="pageHeader">Feedback</h1>
-        <form id="feedbackForm" action="" onsubmit="processFeedback()">
+        <form id="feedbackForm" action="scripts/processFeedback.php" onsubmit="return processFeedback()" method="post">
             <fieldset>
                 <legend>Give your feedback</legend>
                 <table>
@@ -55,10 +55,6 @@
                     <tr>
                         <td><label for="productsResponse">Why or why not?</label></td>
                         <td><textarea name="moreProducts" id="moreProducts" rows="6" cols="50"></textarea></td>
-                    </tr>
-                    <tr>
-                        <td><label for="confirmationEmail">Receive Confirmation Email:</label></td>
-                        <td><input type="checkbox" name="confirmationEmail" id="confirmationEmail" /></td>
                     </tr>
                     <tr>
                         <td><input type="submit" value="Submit your Feedback" /></td>

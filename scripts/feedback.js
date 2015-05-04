@@ -2,7 +2,7 @@ function processFeedback() {
 //    alert("got to the processFeedback function");
     var feedbackForm = document.getElementById("feedbackForm");
 //    alert("got feedback variable");
-    validateInput(feedbackForm);
+    return validateInput(feedbackForm);
 }
 
 function validateInput(feedbackForm) {
@@ -20,24 +20,27 @@ function validateInput(feedbackForm) {
 //    alert("purchaseAgain: " + purchaseAgain);
     var textField = feedbackForm.moreProducts.value;
 //    alert("textField: " + textField);
-    var confirmationEmail = feedbackForm.confirmationEmail.checked;
-//    alert("confirmationEmail: " + confirmationEmail);
 
     if (!validateName(fName)) {
         alert("Invalid first name.");
+        return false;
     }
     if (!validateName(lName)) {
         alert("Invalid last name.");
+        return false;
     }
 
     if (!validateEmail(email)) {
         alert("Invalid email.");
+        return false;
     }
     if (!validateProductPurchased(productPurchased)) {
         alert("Invalid product.");
+        return false;
     }
     if (!validateText(textField)) {
         alert("Invalid text field.");
+        return false;
     }
 
 
