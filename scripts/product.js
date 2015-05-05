@@ -29,7 +29,7 @@ function ProcessOrder() {
   }
   //either this call or the method itself is not working
   if (!validateZip(zipCode)){
-    alert("Invalid zip."):
+    alert("Invalid zip.");
     return false;
   }
   alert("Your order Total is: "+Total+", and it has been added to your cart. Thank You");
@@ -37,10 +37,15 @@ function ProcessOrder() {
 
 }
 
-//this method is being screwy ask cory how search works
+
 function validateZip(zip) {
-  alert("This is where all hell breaks lose")
   var regZip=/^[0-9]{5}(?:-[0-9]{4})?$/;
-  return regZip.test(zip);
+  p=zip.search(regZip);
+  if(p==0){
+    return true;
+  }
+  else {
+    return false;
+  }
 
 }
