@@ -20,7 +20,7 @@ $messageToBusiness =
 
 //Send email feedback message to the business
 $headerToBusiness = "From: ".$_POST['email']."\r\n";
-//mail("cmortime@uci.edu", "Feedback", $messageToBusiness, $headerToBusiness);
+mail("cmortime@uci.edu", "Feedback", $messageToBusiness, $headerToBusiness);
 
 //Message to client
 $messageToClient =
