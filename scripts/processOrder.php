@@ -12,7 +12,7 @@ $messageToBusiness =
     $_POST['moreProducts']."\r\n";
 
 $headerToBusiness = "From: ".$_POST['email']."\r\n";
-mail("vlalchan@uci.edu", "Order", $messageToBusiness, $headerToBusiness);
+//mail("vlalchan@uci.edu", "Order", $messageToBusiness, $headerToBusiness);
 
 //Message to client
 $messageToClient =
@@ -22,7 +22,7 @@ $messageToClient =
     "\r\n----------------------------\r\nThank you for your business you can expect your items to be beamed to you in 2-4 weeks.
      \r\n".
     "More Electronics! Team\r\n----------------------------\r\n";
-mail('email',"order")
+
 
 
 //Confirmation message in HTML display
