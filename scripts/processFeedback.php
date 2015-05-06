@@ -32,7 +32,7 @@ $messageToClient =
 
 
 //ADDED TO SEND EMAIL TO CLIENT
-$headerToClient="From: cmoretime@uci.edu \r\n";  //client header
+$headerToClient="From: cmortime@uci.edu \r\n";  //client header
 mail($_POST['email'],"More Electronics! Feedback Sent", $messageToClient, $headerToClient); //email that gets sent to client
 
 //Confirmation message in XHTML and display
@@ -44,7 +44,7 @@ $display =
 echo $display;
 
 //Log the message in a file called feedback.txt on web server
-$fileVar = fopen("~/public_html/data/feedback.txt", "a")
+$fileVar = fopen("../data/feedback.txt", "a")
     or die("Error: Could not open the log file.");
 fwrite($fileVar, "\n-----------------------------------------------------\n")
     or die("Error: Could not write to the log file.");

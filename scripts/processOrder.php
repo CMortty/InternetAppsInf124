@@ -8,11 +8,9 @@ $messageToBusiness =
     "Quantity of Calculators: ".$_POST['numAbacus']."\r\n".
     "Quantity of Text Editors: ".$_POST['numWriter']."\r\n".
     "Address: ".$_POST['streetAddress']." ".$_POST['zipCode']."\r\n".
-    "Buy more products? ".$purchaseAnswer."\r\n".
-    $_POST['moreProducts']."\r\n";
 
 $headerToBusiness = "From: ".$_POST['email']."\r\n";
-mail("cmoretime@uci.edu", "Order", $messageToBusiness, $headerToBusiness);
+mail("cmortime@uci.edu", "Order", $messageToBusiness, $headerToBusiness);
 
 //Message to client
 $messageToClient =
@@ -24,7 +22,7 @@ $messageToClient =
     "More Electronics! Team\r\n----------------------------\r\n";
     
 //ADDED TO SEND EMAIL TO CLIENT
-$headerToClient="From: cmoretime@uci.edu \r\n";
+$headerToClient="From: cmortime@uci.edu \r\n";
 mail($_POST['email'],"More Electronics Order Information", $messageToClient, $headerToClient);
 
 //Confirmation message in HTML display
@@ -36,7 +34,7 @@ mail($_POST['email'],"More Electronics Order Information", $messageToClient, $he
   echo $display;
 
 //logs the message in a .txt file
-  $fileVar = fopen("~/public_html/data/feedback.txt", "a")
+  $fileVar = fopen("../data/feedback.txt", "a")
       or die("Error: Could not open the log file.");
   fwrite($fileVar, "\n-----------------------------------------------------\n")
       or die("Error: Could not write to the log file.");
