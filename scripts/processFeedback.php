@@ -9,7 +9,7 @@ if ($_POST['purchaseAns']) {
 else {
     $purchaseAnswer = "No";
 }
-$messageToBusiness = 
+$messageToBusiness =
     "From: ".$_POST['firstName']." "
             .$_POST['lastName']."\r\n".
     "Email address: ".$_POST['email']."\r\n".
@@ -23,16 +23,21 @@ $headerToBusiness = "From: ".$_POST['email']."\r\n";
 //mail("cmortime@uci.edu", "Feedback", $messageToBusiness, $headerToBusiness);
 
 //Message to client
-$messageToClient = 
+$messageToClient =
     "Dear ".$_POST['firstName']." ".$_POST['lastName'].":\r\n".
     "The following message was received from you by More Electronics!:\r\n\r\n".
     $messageToBusiness.
     "\r\n----------------------------\r\nThank you for the feedback and your patronage.\r\n".
     "More Electronics! Team\r\n----------------------------\r\n";
 
+
+//ADDED TO SEND EMAIL TO CLIENT
+$headerToClient="From: cmoretime@uci.edu \r\n";  //client header
+mail($_POST['email'],"More Electronics! Feedback Sent", $messageToClient, $headerToClient); //email that gets sent to client
+
 //Confirmation message in XHTML and display
 $display = str_replace("\r\n", "<br />\r\n", $messageToClient);
-$display = 
+$display =
     "<html><head><title>Your Message</title></head><body><tt>".
     $display.
     "</tt></body></html>";
