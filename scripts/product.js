@@ -8,6 +8,7 @@ function ProcessOrder() {
   var numWriter=orderForm.numWriter.value;
   var Total=(numIphone*500)+(numNokia*499)+(numToy*399)+(numAbacus*200)+(numWriter*48);
   var fName = orderForm.firstName.value;
+  var address =orderForm.streetAddress.value;
 
   var lName=orderForm.lastName.value;
   var email=orderForm.email.value;
@@ -32,6 +33,10 @@ function ProcessOrder() {
     alert("Invalid zip.");
     return false;
   }
+  if(!validateAddress(address)){
+    alert ("Invalid address.");
+    return false;
+  }
   alert("Your order Total is: "+Total+", and it has been added to your cart. Thank You");
 
 
@@ -49,3 +54,33 @@ function validateZip(zip) {
   }
 
 }
+
+function validateAddress(address) {
+  //var regAddress=/A-Za-z0-9'\.\-\s\,/;
+  var regAddress=/[0-9]{1,6}\s[a-zA-z0-9\s]{1,40}/;
+  p=address.search(regAddres);
+  if (p==0){
+    return true;
+  }
+  else{
+    return false;
+  }
+  }
+
+  var id = 0;
+  var colors = ["red", "purple", "black", "green", "blue", "orange"]
+  //change this method to actually change the border color
+  function changeBorderColor() {
+      var outerTable = document.getElementById("outerTable");
+      outerTable.style.borderColor = "blue";
+      setInterval('borderchange()', 1500);
+  }
+
+  function borderchange(){
+      var outerTable = document.getElementById("outerTable");
+      outerTable.style.borderColor = colors[id];
+      id++;
+      if (id == 6) {
+          id = 0;
+      }
+  }
